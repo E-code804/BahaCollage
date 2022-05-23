@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+}
+
+.img-size {
+    height: 500px;
+}
