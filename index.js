@@ -1,4 +1,6 @@
-let imgString = "./images/baha", imgNum = 2, interval = 800;
+let imgString = "./images/baha", imgNum = 1, interval = 800;
+
+$("img").attr("src", imgString + imgNum++ + ".JPG").fadeIn(interval);
 
 // setInteral has 2 parameters: 
 // The first is a function and the second is time (ms) that the program will wait 
