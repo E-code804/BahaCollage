@@ -12,6 +12,6 @@ setInterval(() => {
 
     $("img").fadeOut(interval); // Fade out the current image.
     setTimeout(() => { // setTimeout is the same as setInterval, but only executes its code once. 
-        $("img").attr("src", imgString + (imgNum++ % 34) + ".JPG").fadeIn(interval);
+        $("img").attr("src", imgString + (imgNum++ % 33) + ".JPG").fadeIn(interval);
     }, 1500);
 }, 4250);
