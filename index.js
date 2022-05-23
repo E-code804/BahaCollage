@@ -6,12 +6,12 @@ $("img").attr("src", imgString + imgNum++ + ".JPG").fadeIn(interval);
 // The first is a function and the second is time (ms) that the program will wait 
 // until it executes the function.
 setInterval(() => {
-    if (imgNum % 34 == 0) {
+    if (imgNum % 33 == 0) {
         imgNum += 1;
     }
 
     $("img").fadeOut(interval); // Fade out the current image.
     setTimeout(() => { // setTimeout is the same as setInterval, but only executes its code once. 
         $("img").attr("src", imgString + (imgNum++ % 33) + ".JPG").fadeIn(interval);
-    }, 1500);
+    }, 2050);
 }, 4250);
