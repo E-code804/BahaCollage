@@ -1,17 +1,29 @@
-let imgString = "./images/baha", imgNum = 1, interval = 650;
+let imgString = "./images/baha",
+  imgNum = 1,
+  interval = 675;
 
-$("img").attr("src", imgString + imgNum++ + ".JPG").fadeIn(interval);
+$("img")
+  .attr("src", imgString + imgNum++ + ".JPG")
+  .fadeIn(interval);
 
-// setInteral has 2 parameters: 
-// The first is a function and the second is time (ms) that the program will wait 
+// setInteral has 2 parameters:
+// The first is a function and the second is time (ms) that the program will wait
 // until it executes the function.
 setInterval(() => {
-    if (imgNum % 33 == 0) {
-        imgNum += 1;
+  $("img").fadeOut(interval); // Fade out the current image.
+  setTimeout(function () {
+    // setTimeout is the same as setInterval, but only executes its code once.
+    if (imgNum % 33 === 0) {
+      displayImage(33);
+      imgNum++;
+    } else {
+      displayImage(imgNum++ % 33);
     }
-
-    $("img").fadeOut(interval); // Fade out the current image.
-    setTimeout(() => { // setTimeout is the same as setInterval, but only executes its code once. 
-        $("img").attr("src", imgString + (imgNum++ % 33) + ".JPG").fadeIn(interval);
-    }, 2050);
+  }, 1500);
 }, 4250);
+
+function displayImage(num) {
+  $("img")
+    .attr("src", imgString + num + ".JPG")
+    .fadeIn(interval);
+}
