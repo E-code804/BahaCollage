@@ -1,4 +1,4 @@
-let imgString = "./images/baha", imgNum = 1, interval = 1000;
+let imgString = "./images/baha", imgNum = 1, interval = 650;
 
 $("img").attr("src", imgString + imgNum++ + ".JPG").fadeIn(interval);
 
