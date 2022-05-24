@@ -10,3 +10,9 @@ h1 {
 .img-size {
     height: 500px;
 }
+
+@media (max-width: 650px) {
+    .img-size {
+        width: 50%;
+    }
+}
