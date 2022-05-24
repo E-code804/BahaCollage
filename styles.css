@@ -1,19 +1,19 @@
 body {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
 }
 
 .img-size {
-    height: 500px;
+  height: 500px;
 }
 
 @media (max-width: 650px) {
-    .img-size {
-        width: 60%;
-        height: auto;
-    }
+  .img-size {
+    width: 60%;
+    height: auto;
+  }
 }
