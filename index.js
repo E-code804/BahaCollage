@@ -9,7 +9,7 @@ $("img")
 // setInteral has 2 parameters:
 // The first is a function and the second is time (ms) that the program will wait
 // until it executes the function.
-setInterval(() => {
+setInterval(function () {
   $("img").fadeOut(interval); // Fade out the current image.
   setTimeout(function () {
     // setTimeout is the same as setInterval, but only executes its code once.
